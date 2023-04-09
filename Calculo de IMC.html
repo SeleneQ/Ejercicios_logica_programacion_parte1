@@ -22,22 +22,22 @@ function imprimir(frase) {
 function calcularImc(peso,altura) {
 
  imc = peso / (altura * altura);
-return(imc);
+ return imc;
+ 
+}
+
+function sumarDosNumeros(numero1, numero2) {
+
+imprimir("La suma de los dos numeros es : " + (numero1 + numero2) );
 
 }
 
- pesoSelene = 50
- alturaSelene = 1.56
- //imcSelene = pesoSelene / (alturaSelene * alturaSelene)
- imcSelene = calcularImc(pesoSelene,alturaSelene)
+sumarDosNumeros(10, 40);
 
-imprimir("El IMC de Selene es: " + imcSelene) 
+var imcSelene = calcularImc(50,1.56,)
+var imcFernando = calcularImc(80,1.65)
 
- pesoFernando = 80
- alturaFernando = 1.65
- imcFernando = pesoFernando / (alturaFernando * alturaFernando)
+imprimir("El promedio del imc calculado de Selene y Fernando es: " + (imcSelene+imcFernando)/2);
 
-imprimir("El IMC de Fernando es: " + imcFernando)
-
-</script> 
+ </script> 
 
