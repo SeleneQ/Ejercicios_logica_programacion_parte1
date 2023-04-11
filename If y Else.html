@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA - CALCULAR PUNTOS DE UN EQUIPO DE FUTBOL</h1>
+
+<script>
+
+function SaltarLinea() {
+
+ document.write("<br>");
+ document.write("<br>");
+ document.write("<br>");
+
+	}
+
+function imprimir(frase) {
+
+ document.write(frase)
+ SaltarLinea();
+
+}
+
+var contraseña = prompt("Entra con tu contraseña");
+
+if(contraseña == "micontrasena123") {
+    alert("Acceso liberado!");
+} else {
+    alert("Acceso negado!");
+}
+
+//¡Correcto! La condición if necesita recibir el resultado de una operación lógica dentro de los paréntesis.
+//if(contrasenha == "micontrasenha123") 
+//Además, es dentro del bloque que indicamos cuáles instrucciones se ejecutarán si la operación lógica fuera true:
+//if(contrasenha == "micontrasenha123") {
+//    alert("Acceso liberado!");    
+//    }
+//Observa que tenemos dos llaves que comienzan y finalizan el bloque if. La instrucción else viene justo después del bloque if:
+//if(contrasenha == "micontrasenha123") {
+//    alert("Acceso liberado!");    
+//    } else
+//Así como la instrucción if, la instrucción else también tiene su bloque con las instrucciones que deseamos ejecutar si la condición //if recibe false:
+//if(contrasenha == "micontrasenha123") {
+//    alert("Acceso liberado!");
+//    } else {
+//    alert("Acceso negado!");
+//    }
+
+
+</script>
