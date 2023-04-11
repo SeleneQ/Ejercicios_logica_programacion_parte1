@@ -21,23 +21,19 @@ function imprimir(frase) {
 
 function calcularImc(peso,altura) {
 
- imc = peso / (altura * altura);
- return imc;
+ return (peso / (altura * altura));
  
 }
 
-function sumarDosNumeros(numero1, numero2) {
+nombre = prompt("informe su nombre")
+pesoInformado = prompt(nombre + ", informe su peso")
+alturaInformado = prompt(nombre + ", informe su altura")
 
-imprimir("La suma de los dos numeros es : " + (numero1 + numero2) );
+imcCalculado = calcularImc(pesoInformado,alturaInformado)
 
-}
+//toFixed() es usado para limitar a n numero de decimales
 
-sumarDosNumeros(10, 40);
-
-var imcSelene = calcularImc(50,1.56,)
-var imcFernando = calcularImc(80,1.65)
-
-imprimir("El promedio del imc calculado de Selene y Fernando es: " + (imcSelene+imcFernando)/2);
+imprimir(nombre + ", su imc calculado es: " + imcCalculado.toFixed(2));
 
  </script> 
 
