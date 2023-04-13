@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<h1>VOS ERRASTE 10 VECES!</h1>
+
+<script>
+
+    function SaltarLinea() {
+
+ document.write("<br>");
+ document.write("<br>");
+ document.write("<br>");
+
+    }
+
+function imprimir(frase) {
+
+ document.write(frase);
+ SaltarLinea();
+
+}
+
+function sortearNumero() {
+
+        return Math.round(Math.random() * 100);
+    }   
+
+ //¡Correcto! Recuerda que el while repetirá TODAS las instrucciones que estén dentro de su bloque { } cuando la condición pasada sea true. Observa que el while recibe en sus paréntesis () la expresión contador <= 10.Cuando el navegador interpreta la línea del while preguntará: ¿El valor de la variable contador es menor que o igual a 10? Como variable contador recibe el valor 1 en su inicialización el resultado de la expresión contador <= 10 será true. Siendo así, el while estará autorizado para ejecutar la instrucción dentro de su bloque, en ese caso, la instrucción imprimir("¡Se acabó, vos erraste!"); y la instrucción contador = contador + 1.¿Tiene sentido que él ejecute imprimir("¡Se acabó, vos erraste!")? Por supuesto, pero ¿recuerdas la razón por la que hacemos contador = contador + 1? Ten en cuenta que esta variable existe solo para un propósito: es la que romperá la sección de repetición while. Con cada repetición de la instrucción imprimir, necesitamos aumentarlo para saber que ya lo hemos ejecutado, una, dos, tres veces, etc. Si no tenemos la instrucción contador = contador + 1, la condición pasada al while dará siempre true y caeremos en una repetición infinita, el famoso loop infinito y muy probable que nuestro navegador se cuelgue.   
+
+    var numeroPensado = sortearNumero();
+
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10: "));
+
+    if(numeroLanzado  == numeroPensado) {
+
+        imprimir("Uau! Vos acertaste, pues yo pensé en el número " + numeroPensado);
+    } else {
+        var contador = 1;
+
+        while(contador <= 10) {
+
+               imprimir("¡Se acabó, vos erraste!");
+               contador = contador +1;
+        }
+    }
+
+</script>
+
