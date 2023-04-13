@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA - TABLA DE MULTIPLICAR</h1>
+
+<script>
+
+function SaltarLinea() {
+
+ document.write("<br>");
+ document.write("<br>");
+ document.write("<br>");
+
+	}
+
+function imprimir(frase) {
+
+ document.write(frase)
+ SaltarLinea();
+
+}
+
+var multiplicador = 1
+imprimir("WHILE");
+
+while (multiplicador <= 10) {
+imprimir(5 * multiplicador);
+multiplicador = multiplicador + 1;
+                //multiplicador++ Es otra forma de decirle quiero que al multiplicador me le sumes 1
+}
+
+imprimir ("FOR");
+for (var multiplicador = 1;multiplicador <= 10;multiplicador = multiplicador + 1) {
+     imprimir(5 * multiplicador);                              //multiplicador++
+}
+
+
+</script>
